@@ -1,9 +1,12 @@
 <template>
-    <fieldset class="shortener-result">
-        <legend class="shortener-result__title">Link encurtado:</legend>
+    <fieldset class="shortener-result" v-if="setResultDisplay">
+        <legend class="shortener-result__title">Shortened URL:</legend>
         <div class="shortener-result__area">
-            <a href="#" class="shortener-result__area--url"
-                >http://bit.ly/AsdE23</a
+            <a
+                :href="setShortenedUrl"
+                target="_blank"
+                class="shortener-result__area--url"
+                >{{ setShortenedUrl }}</a
             >
             <a href="#" class="shortener-result__area--icon-link">
                 <img
@@ -17,7 +20,16 @@
 </template>
 
 <script>
-export default {}
+export default {
+    computed: {
+        setResultDisplay() {
+            return this.$store.getters.getResultDisplay
+        },
+        setShortenedUrl() {
+            return this.$store.getters.getShortenedUrl
+        },
+    },
+}
 </script>
 
 <style lang="scss" scoped>

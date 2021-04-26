@@ -1,12 +1,23 @@
 <template>
     <form class="shortener-input" @submit.prevent>
-        <input type="text" class="shortener-input__bar" />
-        <button class="shortener-input__button">Shorten</button>
+        <input type="text" class="shortener-input__bar" v-model="inputUrl" />
+        <button class="shortener-input__button" @click="putUrl">Shorten</button>
     </form>
 </template>
 
 <script>
-export default {}
+export default {
+    data() {
+        return {
+            inputUrl: '',
+        }
+    },
+    methods: {
+        putUrl() {
+            this.$store.dispatch('fetchBitLyApi', this.inputUrl)
+        },
+    },
+}
 </script>
 
 <style lang="scss" scoped>

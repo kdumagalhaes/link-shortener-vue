@@ -9,7 +9,7 @@
             Link <strong class="hero__title--strong">Shortener</strong>
         </h1>
         <p class="hero__text">
-            Place your long URL in the input and press the "Shorten" button!
+            Paste your long URL in the input and press the "Shorten" button!
         </p>
     </div>
 </template>
