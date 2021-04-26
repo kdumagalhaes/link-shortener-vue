@@ -1,15 +1,27 @@
 <template>
-    <Hero />
+    <div class="app-template">
+        <MainContent />
+    </div>
 </template>
 
 <script>
-import { Hero } from '@/components/atoms'
+// molecules
+import MainContent from '@/components/molecules/MainContent'
+
 export default {
     name: 'App',
     components: {
-        Hero,
+        MainContent,
     },
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.app-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+</style>

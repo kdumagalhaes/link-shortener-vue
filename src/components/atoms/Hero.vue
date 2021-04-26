@@ -26,10 +26,14 @@ export default {
 .hero {
     text-align: center;
 
+    .hero__img,
+    .hero__text {
+        margin-bottom: 40px;
+    }
+
     .hero__img {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 40px;
     }
 
     .hero__title {
@@ -47,7 +51,7 @@ export default {
 
     .hero__text {
         font-size: 1.2rem;
-        color: $color3;
+        color: $color4;
     }
 }
 </style>
