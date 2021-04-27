@@ -1,24 +1,16 @@
-# link-shortener-vue
+# DevProjects - Link shortener website
 
-## Project setup
-```
-yarn install
-```
+This is an open source project from [DevProjects](http://www.codementor.io/projects). Feedback and questions are welcome!
+Find the project requirements here: [Link Shortener Website](https://www.codementor.io/projects/web/link-shortener-website-brqjanf6zq/get-started)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![](screencapture.png)
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
+## My tools:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+-   [x] VueJS;
+-   [x] SCSS;
+-   [x] BEM CSS;
+-   [x] Atomic Design principles;
+
+**You can see the live demo and give feedbacks on the [DevProjects page](https://www.codementor.io/project-solutions/buyhdubl56).**
