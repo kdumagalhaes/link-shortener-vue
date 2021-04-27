@@ -54,6 +54,10 @@ export default {
 
     .shortener-input__control {
         display: flex;
+
+        @media only screen and (max-width: 375px) {
+            flex-direction: column;
+        }
     }
 
     .shortener-input__control--input,
@@ -69,6 +73,10 @@ export default {
         padding-left: 20px;
         margin-right: 30px;
         border: 1px solid $color2;
+
+        @media only screen and (max-width: 375px) {
+            margin-bottom: 20px;
+        }
     }
 
     .shortener-input__control--button {
@@ -85,6 +93,10 @@ export default {
         &:hover {
             box-shadow: none;
             background-color: $color2;
+        }
+
+        @media only screen and (max-width: 375px) {
+            max-width: 100%;
         }
     }
 }

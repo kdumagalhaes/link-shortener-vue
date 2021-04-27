@@ -15,7 +15,6 @@ export default createStore({
     actions: {
         fetchBitLyApi({ commit }, value) {
             const data = JSON.stringify({ long_url: value })
-            console.log(value)
             const config = {
                 method: 'post',
                 url: 'https://api-ssl.bitly.com/v4/shorten',

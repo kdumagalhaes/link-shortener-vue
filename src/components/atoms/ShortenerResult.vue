@@ -8,13 +8,6 @@
                 class="shortener-result__area--url"
                 >{{ setShortenedUrl }}</a
             >
-            <a href="#" class="shortener-result__area--icon-link">
-                <img
-                    src="@/assets/img/copy.svg"
-                    alt="Copy icon"
-                    class="shortener-result__area--icon-copy"
-                />
-            </a>
         </div>
     </fieldset>
 </template>
@@ -56,17 +49,6 @@ export default {
             font-weight: $bold;
             color: $color4;
             text-decoration: underline;
-        }
-
-        .shortener-result__area--icon-copy {
-            width: 100%;
-            max-width: 25px;
-            opacity: 1;
-            transition: opacity 0.4s;
-
-            &:hover {
-                opacity: 0.5;
-            }
         }
     }
 }
