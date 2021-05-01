@@ -20,7 +20,7 @@ export default createStore({
                 url: 'https://api-ssl.bitly.com/v4/shorten',
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: process.env.VUE_APP_API_KEY,
+                    Authorization: process.env.VUE_APP_VERCEL_API_KEY,
                 },
                 data: data,
             }
